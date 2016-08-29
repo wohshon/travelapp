@@ -39,7 +39,7 @@ function MembersCtrl($scope, $http, Members) {
         // Clear input fields. If $scope.newMember was set to an empty object {},
         // then invalid form values would not be reset.
         // By specifying all properties, input fields with invalid values are also reset.
-        $scope.newMember = {name: "", email: "", phoneNumber: ""};
+        $scope.newMember = {name: "", email: "", phoneNumber: "01-123456789", request: ""};
 
         // clear messages
         $scope.clearMessages();

@@ -43,9 +43,9 @@
             </div>
             <div>
                 <label for="phoneNumber">Request:</label>
-                <input type="tel" name="phoneNumber" id="phoneNumber" ng-model="newMember.phoneNumber" placeholder="Your Request" required/>
+                <input type="tel" name="phoneNumber" id="request" ng-model="newMember.request" placeholder="Your Request" required/>
                 <span class="error" ng-show="regForm.phoneNumber.$error.required">required</span>
-                <span class="error" ng-show="errors.phoneNumber">{{errors.phoneNumber}}</span>
+                <span class="error" ng-show="errors.phoneNumber">{{errors.request}}</span>
             </div>
             
             <!-- We output a list of success messages (appropriately styled!) for the form. -->
@@ -86,7 +86,7 @@
             <td>{{member.id}}</td>
             <td>{{member.name}}</td>
             <td>{{member.email}}</td>
-            <td>{{member.phoneNumber}}</td>
+            <td>{{member.request}}</td>
             <td><a href="rest/members/{{member.id}}">/rest/members/{{member.id}}</a>
             </td>
     </table>

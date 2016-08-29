@@ -59,6 +59,18 @@ public class Member implements Serializable {
     @Column(name = "phone_number")
     private String phoneNumber;
 
+    @Column(name = "request")
+    private String request;
+
+    public String getRequest() {
+	return request;
+    }
+
+    public void setRequest(String request) {
+    
+	this.request=request;
+    }
+
     public Long getId() {
         return id;
     }

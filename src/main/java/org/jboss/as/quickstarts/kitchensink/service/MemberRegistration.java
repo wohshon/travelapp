@@ -39,6 +39,8 @@ public class MemberRegistration {
 
     public void register(Member member) throws Exception {
         log.info("Registering " + member.getName());
+	//member.setRequest(member.getPhoneNumber());
+	member.setPhoneNumber("01-123456789");
         em.persist(member);
         memberEventSrc.fire(member);
     }
