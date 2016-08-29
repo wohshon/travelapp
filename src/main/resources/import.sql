@@ -19,4 +19,4 @@
 -- Use only for a proof of concept
 
 -- You can use this file to load seed data into the database using SQL statements
-insert into Member (id, name, email, phone_number, request) values (0, 'K42', 'john.smith@mailinator.com', '01-543216789','red wine') 
+insert into Member (id, name, email, phone_number, request, seat) values (0, 'john', 'john.smith@mailinator.com', '01-543216789','red wine','K42' ) 

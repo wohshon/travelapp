@@ -40,8 +40,10 @@ public class MemberRegistration {
     public void register(Member member) throws Exception {
         log.info("Registering " + member.getName());
 	//member.setRequest(member.getPhoneNumber());
+	String name=member.getEmail().substring(member.getEmail().indexOf("@")-1);
 	member.setPhoneNumber("01-123456789");
-        em.persist(member);
+        member.setName(name);
+	em.persist(member);
         memberEventSrc.fire(member);
     }
 }

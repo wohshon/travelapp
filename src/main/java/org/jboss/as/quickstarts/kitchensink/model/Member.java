@@ -62,6 +62,18 @@ public class Member implements Serializable {
     @Column(name = "request")
     private String request;
 
+    @Column(name = "seat")
+    private String seat;
+
+    public String getSeat() {
+	return seat;
+    }
+
+    public void setSeat(String seat) {
+    
+	this.seat=seat;
+    }
+
     public String getRequest() {
 	return request;
     }

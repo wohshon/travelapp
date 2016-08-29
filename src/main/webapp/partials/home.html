@@ -31,7 +31,7 @@
             <!-- Each input is bound to a property on the prototype newMember object -->
             <div>
                 <label for="name">Seat:</label>
-                <input type="text" name="name" id="name"  ng-model="newMember.name" placeholder="Your Seat" required autofocus/>
+                <input type="text" name="name" id="seat"  ng-model="newMember.seat" placeholder="Your Seat" required autofocus/>
                 <span class="error" ng-show="regForm.name.$error.required">required</span>
                 <span class="error" ng-show="errors.name">{{errors.name}}</span>
             </div>
@@ -84,7 +84,7 @@
         <!-- The table is built using the AngularJS repeat function, iterating over the members variable, and ordering by the property specified in the orderBy variable -->
         <tr ng-repeat="member in members | orderBy:orderBy">
             <td>{{member.id}}</td>
-            <td>{{member.name}}</td>
+            <td>{{member.seat}}</td>
             <td>{{member.email}}</td>
             <td>{{member.request}}</td>
             <td><a href="rest/members/{{member.id}}">/rest/members/{{member.id}}</a>
